@@ -20,3 +20,6 @@ W3C Valid HTML5.
 
 #Changelog
 Beta
+. Add scss style archive
+· Add sass variables for colors
+· Dropdown menu
