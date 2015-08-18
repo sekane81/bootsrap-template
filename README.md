@@ -19,7 +19,10 @@ SEO Friendly.
 W3C Valid HTML5.
 
 #Changelog
-Beta
-. Add scss style archive
+Version 1.0
+. Add scss style file
 · Add sass variables for colors
 · Dropdown menu
+· Add scss queries file
+· Add item.html file
+· Sort style.scss code

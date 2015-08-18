@@ -18,7 +18,7 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="js/rs-plugin/css/settings.css">
 	<link rel="stylesheet" href="css/styles.css">
-
+	<link rel="stylesheet" href="css/queries.css">
 	<script type="text/javascript" src="js/modernizr.custom.32033.js"></script>
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -56,8 +56,8 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown"><a href="#about" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="item.html#item">Who are we</a></li>
-								<li><a href="item.html#item">Contact</a></li>
+								<li><a class="submenu" href="item.html#item">Who are we</a></li>
+								<li><a class="submenu" href="item.html#item">Contact</a></li>
 							</ul>
 						</li>
 						<li>
@@ -98,7 +98,7 @@
 							 data-speed="500"
 							 data-start="700"
 							 data-easing="Power4.easeOut">
-							 <img src="img/Slides/hand-berry.png" alt="">
+							 <img src="img/Slides/slide1.png" alt="">
 						</div>
 						<div class="tp-caption lfl fadeout visible-xs"
 							 data-x="left"
@@ -108,7 +108,7 @@
 							 data-speed="500"
 							 data-start="700"
 							 data-easing="Power4.easeOut">
-							 <img src="img/iphone-berry.png" alt="">
+							 <img src="img/Slides/slide_small.PNG" alt="">
 						</div>
 						<div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
 							 First
@@ -137,7 +137,19 @@
 							 data-speed="1000"
 							 data-start="700"
 							 data-easing="Power4.easeOut">
-							 <img src="img/Slides/berry-slide2.png" alt="">
+							 <img src="img/Slides/slide2.png" alt="">
+						</div>
+						<div class="tp-caption customin customout visible-xs"
+							 data-x="center"
+							 data-y="center"
+							 data-hoffset="0"
+							 data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
+						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+							 data-voffset="0"
+							 data-speed="1000"
+							 data-start="700"
+							 data-easing="Power4.easeOut">
+							 <img src="img/Slides/slide_small.PNG" alt="">
 						</div>
 						<div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
 							 Second
@@ -158,17 +170,15 @@
 						<img src="img/transparent.png"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
 						<!-- LAYERS -->
 						<!-- LAYER NR. 1 -->
-						<div class="tp-caption customin customout hidden-xs"
+						<div class="tp-caption lfb fadeout hidden-xs"
 							 data-x="left"
 							 data-y="bottom"
 							 data-hoffset="0"
-							 data-customin="x:50;y:150;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;opacity:0;transformPerspective:0;transformOrigin:50% 50%;"
-						data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-							 data-voffset="50"
+							 data-voffset="0"
 							 data-speed="1000"
 							 data-start="700"
 							 data-easing="Power4.easeOut">
-							 <img src="img/Slides/family-berry.png" alt="">
+							 <img src="img/Slides/slide3.png" alt="">
 						</div>
 						<div class="tp-caption customin customout visible-xs"
 							 data-x="center"
@@ -180,7 +190,7 @@
 							 data-speed="1000"
 							 data-start="700"
 							 data-easing="Power4.easeOut">
-							 <img src="img/Slides/family-berry.png" alt="">
+							 <img src="img/Slides/slide_small.PNG" alt="">
 						</div>
 						<div class="tp-caption large_white_bold sft" data-x="550" data-y="center" data-hoffset="0" data-voffset="-80" data-speed="500" data-start="1200" data-easing="Power4.easeOut">
 							 Third
@@ -352,7 +362,7 @@
 
         <section id="reviews">
             <div class="container">
-                <div class="section-heading inverse scrollpoint sp-effect3">
+                <div class="section-heading scrollpoint sp-effect3">
                     <h1>Reviews</h1>
                     <div class="divider"></div>
                     <p>Read What's The People Are Saying About Us</p>
@@ -500,41 +510,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="getApp">
-            <div class="container-fluid">
-                <div class="section-heading inverse scrollpoint sp-effect3">
-                    <h1>Get App</h1>
-                    <div class="divider"></div>
-                    <p>Choose your native platform and get started!</p>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="hanging-phone scrollpoint sp-effect2 hidden-xs">
-                            <img src="img/berry-angled2.png" alt="">
-                        </div>
-                        <div class="platforms">
-                            <a href="#" class="btn btn-primary inverse scrollpoint sp-effect1">
-                                <i class="fa fa-android fa-3x pull-left"></i>
-                                <span>Download for</span><br>
-                                <b>Android</b>
-                            </a>
-                            
-                                <a href="#" class="btn btn-primary inverse scrollpoint sp-effect2">
-                                    <i class="fa fa-apple fa-3x pull-left"></i>
-                                    <span>Download for</span><br>
-                                    <b>Apple IOS</b>
-                                </a>
-                        </div>
-
-                    </div>
-                </div>
-
-                
-
             </div>
         </section>
 
