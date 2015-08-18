@@ -16,7 +16,7 @@ Original sources: https://github.com/ScoopThemes/Oleose
 + W3C Valid HTML5.
 
 ### Changelog
-## Version 1.0
+#### Version 1.0
 + Add scss style file
 + Add sass variables for colors
 + Dropdown menu
