@@ -14,6 +14,7 @@ Original sources: https://github.com/ScoopThemes/Oleose
 + Built With SASS.
 + SEO Friendly.
 + W3C Valid HTML5.
++ Social links
 
 ### Changelog
 #### Version 1.0
@@ -23,6 +24,8 @@ Original sources: https://github.com/ScoopThemes/Oleose
 + Add scss queries file
 + Add item.html file
 + Sort style.scss code
++ Scroll up
++ Social bar
 
 ### Documentation
 Modify SCSS to adapt the design files , there are 3 predefined colors using variables in these files.

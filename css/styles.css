@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*===1===  Fonts*& Links*/
 /*===2===  General styles*/
 /*===3===  Header*/
@@ -9,6 +10,10 @@
 /*===9===  Section demo*/
 /*===10===  Section demo*/
 /*===11===  Section footer*/
+/*===12===  Carousel*/
+/*===13===  Buttons*/
+/*===14===  Preloader*/
+/*===15===  Scroll up*/
 /*===1==Fonts*& Links=============================================================================*/
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -713,7 +718,45 @@ section {
   position: relative;
   padding-bottom: 90px; }
 
-/*carousel===============================================================================*/
+footer {
+  background: #90CDDD;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #90CDDD), color-stop(100%, #2a689c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
+  /* IE10+ */
+  background: linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color2, endColorstr=$color1, GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */ }
+
+footer .social a {
+  border: 2px solid #ffffff; }
+
+footer .social a i {
+  color: #ffffff; }
+
+footer .social a:hover {
+  background: #ffffff; }
+
+footer .social a:hover i {
+  color: #90CDDD; }
+
+footer .rights {
+  color: #ffffff; }
+
+footer .rights a {
+  color: #ffffff;
+  font-weight: 300;
+  text-decoration: none; }
+
+/*===12==Carousel===============================================================================*/
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity; }
@@ -749,7 +792,7 @@ section {
   font-weight: 400;
   font-weight: 300; }
 
-/*buttons===============================================================================*/
+/*===13==Buttons===============================================================================*/
 .btn {
   -webkit-border-radius: 3em;
   -moz-border-radius: 3em;
@@ -867,47 +910,7 @@ form .form-control:focus {
   border-color: #90CDDD;
   color: #999999; }
 
-/* support section===============================================================================*/
-/* footer section===============================================================================*/
-footer {
-  background: #90CDDD;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #90CDDD), color-stop(100%, #2a689c));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
-  /* IE10+ */
-  background: linear-gradient(-45deg, #90CDDD 0%, #2a689c 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color2, endColorstr=$color1, GradientType=1);
-  /* IE6-9 fallback on horizontal gradient */ }
-
-footer .social a {
-  border: 2px solid #ffffff; }
-
-footer .social a i {
-  color: #ffffff; }
-
-footer .social a:hover {
-  background: #ffffff; }
-
-footer .social a:hover i {
-  color: #90CDDD; }
-
-footer .rights {
-  color: #ffffff; }
-
-footer .rights a {
-  color: #ffffff;
-  font-weight: 300;
-  text-decoration: none; }
-
-/*Preloader*/
+/*===14==Preloader===============================================================================*/
 .pre-loader {
   position: fixed;
   width: 100%;
@@ -963,5 +966,76 @@ footer .rights a {
     -webkit-transform: scale(1); } }
 .pre-loader {
   background: #2a689c; }
+
+/*===15==Scroll up===============================================================================*/
+a.scrollup {
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  opacity: 0.5;
+  background-color: #d1d1d1; }
+
+a.scrollup:hover {
+  opacity: 1;
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px; }
+
+/*===16==Social===============================================================================*/
+.social-lat {
+  position: fixed;
+  /* Hacemos que la posici├│n en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0;
+  /* Establecemos la barra en la izquierda */
+  top: 60%;
+  /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000;
+  /* Utilizamos la propiedad z-index para que no se superponga alg├║n otro elemento como sliders, galer├¡as, etc */ }
+
+.social-lat ul {
+  list-style: none;
+  padding-left: 0px; }
+
+.social-lat ul li a {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  width: 40px;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  /* Establecemos una transici├│n a todas las propiedades */ }
+
+.social-lat ul li .icon-facebook {
+  background: #3b5998; }
+
+/* Establecemos los colores de cada red social, aprovechando su class */
+.social-lat ul li .icon-twitter {
+  background: #00abf0; }
+
+.social-lat ul li .icon-googleplus {
+  background: #d95232; }
+
+.social-lat ul li .icon-pinterest {
+  background: #ae181f; }
+
+.social-lat ul li .icon-mail {
+  background: #666666; }
+
+.social-lat ul li a:hover {
+  background: #000;
+  /* Cambiamos el fondo cuando el usuario pase el mouse */
+  padding: 10px 30px;
+  /* Hacemos mas grande el espacio cuando el usuario pase el mouse */ }
 
 /*# sourceMappingURL=styles.css.map */
