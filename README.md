@@ -16,6 +16,7 @@ Original sources: https://github.com/ScoopThemes/Oleose
 + W3C Valid HTML5.
 + Social links
 
+
 ### Changelog
 #### Version 1.0
 + Add scss style file
@@ -26,6 +27,7 @@ Original sources: https://github.com/ScoopThemes/Oleose
 + Sort style.scss code
 + Scroll up
 + Social bar
++ Font Awesome version 4.4.0
 
 ### Documentation
 Modify SCSS to adapt the design files , there are 3 predefined colors using variables in these files.
